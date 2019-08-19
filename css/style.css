@@ -1,3 +1,8 @@
+*{
+    box-sizing: border-box;
+}
+
+
 body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -5,7 +10,7 @@ body{
 
 
 .container{
-    max-width: 1170px;
+    max-width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin:0 auto;
@@ -135,6 +140,10 @@ body{
     font-size: 14px;
     font-weight: 400;
 }
+.top-form input + input{
+    margin-left: 23px;
+}
+
 .top-form input::placeholder{
     color: #a8c48c;
 }
@@ -165,14 +174,14 @@ body{
 .story{
     margin-bottom: 200px;
 }
-.story_wrapper{
+.story__wrapper{
     display: flex;
     justify-content: space-around;
     margin-right: 30px;
     margin-left: 30px;
 }
 .story__inner{
-    max-width: 300px;
+    max-width: 205px;
     position: relative;
 }
 .story__inner-title{
@@ -215,7 +224,92 @@ body{
     width: 15px;
     height: 15px;
     border-radius: 100px;
-    border: 4px solid #a4c58c;
+    border: 5px solid #a4c58c;
     opacity: 0.3;
 
+}
+
+.list__title{
+    color: #303030;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    max-width: 450px;
+    margin-bottom: 45px;
+
+}
+.tabs__content{
+    min-width: 500px;
+    height: 689px;
+    background-image: url(../images/list-images.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+
+}
+
+.list__inner{
+    display: flex;
+    justify-content: space-between;
+
+}
+.tabs{
+    width: 100%;
+    padding-right: 20px;
+}
+.tab{
+    color: #303030;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    text-transform: uppercase;
+    padding: 20px 0;
+    border-bottom: 1px solid #e6efde;
+    cursor: pointer;
+
+}
+.tab span{
+    color: #a4c58c;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    margin-right: 18px;
+    
+}
+.tab-item{
+    display: none;
+    font-weight: 700;
+    font-size: 12px;
+    color: #fff;
+    width: 43px;
+    height: 43px;
+    border: 9px solid rgba(255, 255, 255, .8);
+    border-radius: 50%;
+    position: absolute;
+    text-align: center;
+    line-height: 25px;
+
+
+}
+.tab-item:first-child{
+    display: block;
+}
+.item-1{
+    left: 150px;
+    top: 200px;
+}
+.item-2{
+    left: 300px;
+    top: 200px;
+}
+.item-3{
+    left: 227px;
+    top: 135px;
+}
+.item-4{
+    left: 227px;
+    top: 135px;
 }
